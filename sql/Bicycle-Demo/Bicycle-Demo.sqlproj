@@ -68,6 +68,8 @@
     <Folder Include="etl\" />
     <Folder Include="etl\Tables\" />
     <Folder Include="etl\Stored Procedures\" />
+    <Folder Include="test\" />
+    <Folder Include="test\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\etl.sql" />
@@ -88,6 +90,11 @@
     <Build Include="etl\Stored Procedures\etl.p02_LoadRaw.sql" />
     <Build Include="etl\Stored Procedures\etl.p04_ImportRaw.sql" />
     <Build Include="etl\Stored Procedures\etl.p03_ValidateRaw.sql" />
+    <Build Include="test\Stored Procedures\test.p04_Test.sql" />
+    <Build Include="test\Stored Procedures\test.p03_Test.sql" />
+    <Build Include="test\Stored Procedures\test.p02_Test.sql" />
+    <Build Include="test\Stored Procedures\test.p01_Test.sql" />
+    <Build Include="test\Stored Procedures\test.p00_Test.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
