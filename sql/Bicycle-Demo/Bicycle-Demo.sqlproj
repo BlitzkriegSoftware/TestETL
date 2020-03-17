@@ -85,6 +85,9 @@
     <Build Include="common\Tables\common.ErrorLog.sql" />
     <Build Include="etl\Tables\etl.FilesToImport.sql" />
     <Build Include="etl\Stored Procedures\etl.p01_GetFilesToImport.sql" />
+    <Build Include="etl\Stored Procedures\etl.p02_LoadRaw.sql" />
+    <Build Include="etl\Stored Procedures\etl.p04_ImportRaw.sql" />
+    <Build Include="etl\Stored Procedures\etl.p03_ValidateRaw.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
