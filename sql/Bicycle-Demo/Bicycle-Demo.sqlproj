@@ -65,6 +65,9 @@
     <Folder Include="common\" />
     <Folder Include="common\Tables\" />
     <Folder Include="SeedData" />
+    <Folder Include="etl\" />
+    <Folder Include="etl\Tables\" />
+    <Folder Include="etl\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\etl.sql" />
@@ -77,6 +80,11 @@
     <Build Include="common\Tables\Configuration.sql" />
     <Build Include="Security\common.sql" />
     <None Include="SeedData\Common-Configuration.sql" />
+    <Build Include="etl\Stored Procedures\etl.p00_InitEtl.sql" />
+    <Build Include="etl\Tables\etl.Orders-Raw.sql" />
+    <Build Include="common\Tables\common.ErrorLog.sql" />
+    <Build Include="etl\Tables\etl.FilesToImport.sql" />
+    <Build Include="etl\Stored Procedures\etl.p01_GetFilesToImport.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />

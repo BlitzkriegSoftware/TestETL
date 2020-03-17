@@ -11,8 +11,10 @@
     [StateOrProvence] NVARCHAR (40)  NULL,
     [PostalCode]      NVARCHAR (40)  NOT NULL,
     [PhonePrimary]    NVARCHAR (15)  NULL,
-    [EMail]           NVARCHAR (255) NOT NULL,
+    [EMail]           NVARCHAR (MAX) NOT NULL,
     [IsActive]        BIT            NULL,
     CONSTRAINT [PK_Customer] PRIMARY KEY CLUSTERED ([CustomerId] ASC)
 );
+
+
 
